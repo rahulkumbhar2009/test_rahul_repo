@@ -1,0 +1,48 @@
+rahul@rahul:~$ sudo su
+[sudo] password for rahul: 
+root@rahul:/home/rahul# apt-get install git
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Suggested packages:
+  git-daemon-run git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-arch git-bzr git-cvs git-mediawiki git-svn
+The following packages will be upgraded:
+  git
+1 upgraded, 0 newly installed, 0 to remove and 401 not upgraded.
+Need to get 2,672 kB of archives.
+After this operation, 73.7 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu/ trusty-updates/main git amd64 1:1.9.1-1ubuntu0.8 [2,672 kB]
+Fetched 2,672 kB in 7s (372 kB/s)                                              
+(Reading database ... 604030 files and directories currently installed.)
+Preparing to unpack .../git_1%3a1.9.1-1ubuntu0.8_amd64.deb ...
+Unpacking git (1:1.9.1-1ubuntu0.8) over (1:1.9.1-1ubuntu0.5) ...
+Setting up git (1:1.9.1-1ubuntu0.8) ...
+root@rahul:/home/rahul# git config --global user.name "Rahul_Kumbhar"
+root@rahul:/home/rahul# git config --global user.email "rahulkumbhar2009@gmail.com"
+root@rahul:/home/rahul# cd Work/
+root@rahul:/home/rahul/Work# ls
+1_Smart grid          Extra                           MeterConfiguration.txt      SMDB.db                           test_app.c       WR OS image
+2_Bio_Edge            GPRS_setting.docx               Personal                    socket_prog                       Test_tool        WRSLicense.lic
+3_Parking_Management  Gurux.DLMS.cpp-master.zip       ping_rf.rar                 software                          Trash_RK
+bal                   IoT Gateway IDP XT GSG_3_1.pdf  RahulK_TimeEntry_2018.xlsx  Sqlite_Tuto                       Wifi_folder
+Checksum.rar          log                             ReadMe.txt                  study                             windriver setup
+Comact_A31S_Linux     m2m_gateway                     server.c                    SwapnilKC_ProjectHandOverDoc.ods  work 2016-17
+root@rahul:/home/rahul/Work# mkdir git_hub_repo
+root@rahul:/home/rahul/Work# rm git_hub_repo
+rm: cannot remove ‘git_hub_repo’: Is a directory
+root@rahul:/home/rahul/Work# rm -r git_hub_repo
+root@rahul:/home/rahul/Work# exit
+exit
+rahul@rahul:~$ cd Work
+rahul@rahul:~/Work$ mkdir git_hub_repo
+rahul@rahul:~/Work$ cd git_hub_repo/
+rahul@rahul:~/Work/git_hub_repo$ git init
+Initialized empty Git repository in /home/rahul/Work/git_hub_repo/.git/
+rahul@rahul:~/Work/git_hub_repo$ get remote add origin https://github.com/rahulkumbhar2009/test_rahul_repo.git
+No command 'get' found, but there are 19 similar ones
+get: command not found
+rahul@rahul:~/Work/git_hub_repo$ git remote add origin https://github.com/rahulkumbhar2009/test_rahul_repo.git
+rahul@rahul:~/Work/git_hub_repo$ 
+
+
